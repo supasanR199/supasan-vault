@@ -59,6 +59,23 @@ Consequences: can't find workflows, hard to onboard new team, hard to rerun/debu
 - Logs and docs must be findable
 - New team member should be able to read and understand within 10 minutes
 
+## Flowchart
+
+```mermaid
+flowchart TD
+    WHY([Without blueprint]) --> CHAOS["chaos/\n├── final_final_v2.knwf\n├── test_new_latest.knwf\n├── aaa.sql\n└── use_this_one_REAL.knwf"]
+    CHAOS --> PROB[Can't find files\nCan't onboard\nFails audit]
+
+    PROB -->|Fix with blueprint| GOOD
+
+    GOOD["project_day1/\n├── ingest/\n│   ├── ingest_orders_api.py\n│   └── ingest_inventory_file.py\n├── transform/\n│   ├── clean_orders.sql\n│   └── build_sales_mart.sql\n├── orchestrate/\n│   └── pipeline_day1_flow.yaml\n├── docs/\n│   ├── pipeline_specification.md\n│   └── runbook.md\n└── logs/\n    └── run_log_YYYYMMDD.csv"]
+
+    GOOD --> RULE1[File names = Source + Target]
+    GOOD --> RULE2[Boundaries clear per layer]
+    GOOD --> RULE3[New member understands in 10 min]
+    GOOD --> RULE4[Logs + docs always findable]
+```
+
 ## Related
 
 - [[pipeline-spec-framework]] — `pipeline_specification.md` lives in `/docs`

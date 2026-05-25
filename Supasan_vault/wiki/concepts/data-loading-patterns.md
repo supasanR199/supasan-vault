@@ -93,6 +93,37 @@ Good streaming ≠ just fast. It must:
 | HR data updated only when employee changes | Incremental (event-driven) | — |
 | Partner SFTP file upload nightly | Full Load or Incremental by file | — |
 
+## Flowchart
+
+```mermaid
+flowchart TD
+    START([Need to load data]) --> VOL{Data volume?}
+
+    VOL -->|Small| CHG{Change tracking\navailable?}
+    VOL -->|Large| FRESH{Freshness\nrequired?}
+
+    CHG -->|No| FL[Full Load\nnightly full replace]
+    CHG -->|Yes| FRESH
+
+    FRESH -->|Daily / Hourly| IL[Incremental Load\npull rows where updated_at > watermark]
+    FRESH -->|Near real-time\n1–5 min OK| MB[Micro-batch\ncollect events, process every N min]
+    FRESH -->|Real-time\ninstant| ST[Streaming\nprocess each event immediately]
+
+    IL --> LATE{Late events\npossible?}
+    MB --> LATE
+    ST --> LATE
+
+    LATE -->|Yes| SOL{Solution}
+    LATE -->|No| DONE([Deploy])
+
+    SOL --> WW[Watermark Window\naccept late up to N min]
+    SOL --> RW[Reprocessing Window\nre-pull back window]
+    SOL --> DUP[Deduplication\nkeep latest per key]
+    SOL --> DLQ[Dead Letter Queue\nstore failed events]
+
+    WW & RW & DUP & DLQ --> DONE
+```
+
 ## Related
 
 - [[pipeline-spec-framework]] — question 1 (ดึงจากไหน) and question 2 (เก็บที่ไหน) inform pattern choice

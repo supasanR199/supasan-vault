@@ -19,11 +19,12 @@ Catalog of all pages. LLM reads this first when answering queries.
 | [[concepts/pipeline-spec-framework\|Pipeline Spec Framework]] | 5-question card (source/target/transform/quality/consumer) that defines a pipeline before writing code. |
 | [[concepts/repository-blueprint\|Repository Blueprint]] | Project structure standard: /ingest, /transform, /orchestrate, /docs, /logs. Blueprint before pipeline dev. |
 | [[concepts/data-loading-patterns\|Data Loading Patterns]] | Full Load, Incremental, Micro-batch, Streaming. Watermark and Late Event handling. |
+| [[concepts/concepts-overview\|Concepts Overview]] | Mermaid flowchart showing how Repository Blueprint → Pipeline Spec → Data Loading Patterns connect. |
 
 ---
 
 ## Stats
 
 - Sources: 1
-- Concept pages: 3
-- Last updated: 2026-05-24
+- Concept pages: 4
+- Last updated: 2026-05-25
