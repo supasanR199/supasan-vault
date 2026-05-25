@@ -1,0 +1,13 @@
+# Obsidian app config (machine-specific)
+.obsidian/
+
+# Source PDFs — large binaries, immutable read-only references
+raw/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.tmp
