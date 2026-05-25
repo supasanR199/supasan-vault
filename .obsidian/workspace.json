@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "b6d75a71c37c76c5",
+    "id": "56e550b9623dacb7",
     "type": "split",
     "children": [
       {
-        "id": "2806f3a2089e1bb1",
+        "id": "3aad1afa101fa997",
         "type": "tabs",
         "children": [
           {
-            "id": "2ed78c790bf2d4fb",
+            "id": "9a07c7b53172df7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Supasan_vault/wiki/concepts/data-loading-patterns.md",
-                "mode": "source",
+                "file": "wiki/concepts/data-engineering-undercurrents.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "data-loading-patterns"
+              "title": "data-engineering-undercurrents"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3aa386a0f4f34c01",
+    "id": "29baed4f91b977cf",
     "type": "split",
     "children": [
       {
-        "id": "0087dd9c12c6019e",
+        "id": "0e13ad519217e693",
         "type": "tabs",
         "children": [
           {
-            "id": "b995b59305fb76e7",
+            "id": "83c020d5787173df",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "b8557a9f3c345067",
+            "id": "8aa14ae56b77b28e",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "562882603c5eeede",
+            "id": "417322c8ebadb49d",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +78,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
-    "id": "ca2810c9df7821aa",
+    "id": "f0ee6431ef317c5f",
     "type": "split",
     "children": [
       {
-        "id": "361a633f9f8bc0c1",
+        "id": "7e0a6cbfe4654940",
         "type": "tabs",
         "children": [
           {
-            "id": "e4e6ad5fd73d46a9",
+            "id": "57030783cb2c8a62",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Supasan_vault/wiki/concepts/data-loading-patterns.md",
+                "file": "wiki/concepts/data-loading-patterns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,12 +109,12 @@
             }
           },
           {
-            "id": "22d7426c03eba2ac",
+            "id": "b02612c253d7a16a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Supasan_vault/wiki/concepts/data-loading-patterns.md",
+                "file": "wiki/concepts/data-loading-patterns.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -122,7 +123,7 @@
             }
           },
           {
-            "id": "07e33686c2753d84",
+            "id": "3fe989ad8f038bd9",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +138,7 @@
             }
           },
           {
-            "id": "2117f3e5f7f53074",
+            "id": "ec4f01349a4c32e4",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,12 +152,12 @@
             }
           },
           {
-            "id": "8294aeecace7cda7",
+            "id": "25bb550f89ecbd46",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Supasan_vault/wiki/concepts/data-loading-patterns.md",
+                "file": "wiki/concepts/data-loading-patterns.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -183,6 +184,39 @@
       "bases:Create new base": false
     }
   },
-  "active": "2ed78c790bf2d4fb",
-  "lastOpenFiles": []
+  "active": "9a07c7b53172df7f",
+  "lastOpenFiles": [
+    "Supasan_vault/wiki/sources/BOI-STEM-Day1.md",
+    "Supasan_vault/wiki/concepts/repository-blueprint.md",
+    "Supasan_vault/wiki/concepts/pipeline-spec-framework.md",
+    "Supasan_vault/wiki/concepts/data-loading-patterns.md",
+    "Supasan_vault/wiki/concepts/concepts-overview.md",
+    "Supasan_vault/wiki/sources",
+    "Supasan_vault/wiki/log.md",
+    "Supasan_vault/wiki/index.md",
+    "Supasan_vault/wiki/concepts",
+    "Supasan_vault/wiki",
+    "Supasan_vault/CLAUDE.md",
+    "Supasan_vault",
+    "wiki/sources/fundamentals-of-data-engineering.md",
+    "wiki/sources/data-engineering-lifecycle.md",
+    "wiki/concepts/data-engineering-lifecycle.md",
+    "wiki/concepts/repository-blueprint.md",
+    "wiki/log.md.tmp.54013.fc9556d246fc",
+    "wiki/index.md.tmp.54013.0f8074c21bf2",
+    "wiki/concepts/data-maturity-model.md",
+    "wiki/concepts/data-maturity-model.md.tmp.54013.b573a06ff200",
+    "wiki/concepts/pipeline-spec-framework.md",
+    "wiki/concepts/data-loading-patterns.md",
+    "wiki/concepts/data-engineering-undercurrents.md",
+    "wiki/concepts/data-engineering-undercurrents.md.tmp.54013.981029a08572",
+    "wiki/concepts/data-engineering-lifecycle.md.tmp.54013.8ee73306a2a3",
+    "wiki/sources/fundamentals-of-data-engineering.md.tmp.54013.3e4aefd72e45",
+    "wiki/index.md",
+    "Welcome.md",
+    "create a link.md",
+    "wiki/log.md",
+    "wiki/sources/BOI-STEM-Day1.md",
+    "CLAUDE.md"
+  ]
 }
